@@ -7,7 +7,7 @@ class Game
     
     ALPHABET = Set.new("a".."z")
 
-    def initialize(player_1, player_2) #how to swap players 1 and 2 if we set atr to (*players) line 24 28
+    def initialize(player_1, player_2) #how to swap players 1 and 2 if we set atr to (*players)
         words = File.new("dictionary.txt").map(&:chomp)
         @dictionary = Set.new(words)    #Set implements a collection of unordered values with no duplicates. 
                                      #This is a hybrid of Array's intuitive inter-operation facilities and Hash's fast lookup.
